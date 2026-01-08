@@ -2,7 +2,7 @@
   <img src="assets/logo2.png" alt="PsyDraw Logo" width="200"/>
 </p>
 
-<h1 align="center">PsyDraw: A Multi-Agent Multimodal System for Mental Health Screening in Left-Behind Children</h1>
+<h1 align="center">PsyDraw: 面向留守儿童心理健康检测的多智能体多模态系统</h1>
 
 <p align="center">
   <a href="README.md">
@@ -12,130 +12,127 @@
     <img src="https://img.shields.io/badge/语言-中文-blue?style=for-the-badge" alt="中文">
   </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-GPL%203.0-green?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/badge/许可证-GPL%203.0-green?style=for-the-badge" alt="许可证">
   </a>
   <a href="https://arxiv.org/abs/2412.14769">
-    <img src="https://img.shields.io/badge/Paper-arXiv-red?style=for-the-badge" alt="Paper">
+    <img src="https://img.shields.io/badge/论文-arXiv-red?style=for-the-badge" alt="论文">
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/⚠️%20Professional%20Use%20Only-FF0000?style=for-the-badge" alt="Professional Use Only">
+  <img src="https://img.shields.io/badge/⚠️%20仅供专业人士使用-FF0000?style=for-the-badge" alt="仅供专业人士使用">
 </p>
 
-## ⚠️ Important Ethical Notice and Professional Use Guidelines
+## ⚠️ 重要伦理声明及专业使用指南
 
-**CRITICAL: This system is strictly designed as a professional screening aid tool.**
+**重要提示：本系统严格设计为专业筛查辅助工具**
 
-This repository contains only the code structure of our project due to ethical considerations in mental health assessment. The system's prompts and analytical components are not open-sourced to prevent misuse and ensure proper application.
+出于心理健康评估的伦理考虑，本仓库仅包含项目代码结构。为防止滥用并确保正确应用，系统的提示词和分析组件并未开源。
 
-### Professional Use Only
-- This tool is designed to assist qualified mental health professionals (psychiatrists, counselors, school advisors) in preliminary screenings. Non-professionals must not use it for self/peer assessments. All results require interpretation and validation by qualified professionals.
-- The House-Tree-Person (HTP) test is not a diagnostic tool. Results are for reference only and cannot conclusively evaluate a participant’s psychological state, personality, or capabilities.
-- Participants’ drawings and behaviors reflect subjective perspectives and transient emotional states, not long-term psychological traits. Results must not be used in contexts that may harm participants or influence evaluations, decisions, or selections
-- Developers must protect participant confidentiality (personal data, artworks). Content will not be shared without consent, except in cases of force majeure (e.g., natural disasters, legal mandates).
-- By using this tool, developers acknowledge its purpose, methodology, and limitations. Participants retain the right to withdraw at any time without penalty. The team assumes no liability for misuse or subsequent damages.
+### 仅供专业人士使用
+- 本工具专门设计用于协助合格的心理健康专业人员（精神科医生、心理咨询师和学校心理辅导员）进行初步筛查
+- 严禁未经专业培训的个人用于自我评估或互相评估
+- 所有结果必须由具有资质的心理健康专业人员解释和验证
 
-### Access to Full System
-For research or clinical purposes requiring access to the complete system (including prompts), please contact us at: [project.htp@lyi.ai]. Access will only be granted after:
-1. Verification of professional credentials
-2. Review of intended use case
-3. Instructions for use
-4. Agreement to ethical guidelines and usage terms
+### 完整系统访问
+如需出于研究或临床目的访问完整系统（包括提示词），请联系我们：[project.htp@lyi.ai]。访问权限将仅在满足以下条件后授予：
+1. 专业资质验证
+2. 使用目的审核
+3. 同意伦理准则和使用条款
 
-### Risk Prevention
-- Misuse of psychological assessment tools can lead to incorrect interpretations and potentially harmful outcomes
-- The system should only be deployed in professional settings under qualified supervision
-- All implementations must comply with relevant ethical guidelines and regulations in mental health assessment
+### 风险防范
+- 心理评估工具的滥用可能导致错误解读和潜在危害
+- 系统应仅在专业人员监督下的专业环境中部署
+- 所有实施必须遵守心理健康评估相关的伦理准则和法规
 
-## Project Overview
-Left-behind children (LBCs), numbering over 66 million in China, face severe mental health challenges due to parental migration for work. Early screening and identification of at-risk LBCs is crucial, yet challenging due to the severe shortage of mental health professionals, especially in rural areas. While the House-Tree-Person (HTP) test shows higher child participation rates, its requirement for expert interpretation limits its application in resource-scarce regions. To address this challenge, we propose PsyDraw, a multi-agent system based on Multimodal Large Language Models that assists mental health professionals in analyzing HTP drawings. The system employs specialized agents for feature extraction and psychological interpretation, operating in two stages: comprehensive feature analysis and professional report generation. Evaluation of HTP drawings from 290 primary school students reveals that 71.03% of the analyzes achieved High Consistency with professional evaluations, 26.21% Moderate Consistency and only 2.41% Low Consistency. The system identified 31.03% of cases requiring professional attention, demonstrating its effectiveness as a preliminary screening tool. Currently deployed in pilot schools, PsyDraw shows promise in supporting mental health professionals, particularly in resource-limited areas, while maintaining high professional standards in psychological assessment.
+## 项目概述
+在中国，超过6600万留守儿童由于父母外出务工面临严重的心理健康挑战。早期筛查和识别高风险留守儿童至关重要，但由于心理健康专业人员严重短缺（尤其是在农村地区），这项工作面临巨大挑战。虽然房树人测验（HTP）显示出较高的儿童参与度，但其对专业解释的需求限制了其在资源匮乏地区的应用。为解决这一挑战，我们提出了PsyDraw，一个基于多模态大语言模型的多智能体系统，用于协助心理健康专业人员分析HTP绘画。该系统采用专门的智能体进行特征提取和心理解释，分两个阶段运作：全面特征分析和专业报告生成。对290名小学生的HTP绘画评估显示，71.03%的分析与专业评估达到高度一致，26.21%达到中度一致，仅2.41%为低度一致。系统识别出31.03%的案例需要专业关注，展示了其作为初步筛查工具的有效性。目前已在试点学校部署的PsyDraw显示出在支持心理健康专业人员方面的潜力，特别是在资源有限的地区，同时保持心理评估的高专业标准。
 
 <p align="center">
-  <img src="assets/workflow.png" alt="PsyDraw Workflow"/>
+  <img src="assets/workflow.png" alt="PsyDraw工作流程"/>
   <br>
-  <em>Figure 1: The workflow of PsyDraw</em>
+  <em>图1: PsyDraw的工作流程</em>
 </p>
 
-## ✨ Key Features
+## ✨ 主要特点
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTP%20Analysis-Professional%20Grade-blue?style=for-the-badge" alt="HTP Analysis">
-  <img src="https://img.shields.io/badge/Languages-EN%20%7C%20中文-blue?style=for-the-badge" alt="Languages">
-  <img src="https://img.shields.io/badge/API-Professional%20Healthcare-blue?style=for-the-badge" alt="API">
-  <img src="https://img.shields.io/badge/Web%20Tool-Supervised%20Assessment-blue?style=for-the-badge" alt="Web Tool">
+  <img src="https://img.shields.io/badge/HTP分析-专业级辅助-blue?style=for-the-badge" alt="HTP分析">
+  <img src="https://img.shields.io/badge/语言支持-EN%20%7C%20中文-blue?style=for-the-badge" alt="语言">
+  <img src="https://img.shields.io/badge/API-专业医疗集成-blue?style=for-the-badge" alt="API">
+  <img src="https://img.shields.io/badge/网页工具-专业监督评估-blue?style=for-the-badge" alt="网页工具">
 </p>
 
-## 🚀 Quick Start
+## 🚀 快速开始
 
-### Installation
+### 安装
 
-1. Clone the repository:
+1. 克隆仓库：
 ```bash
 git clone https://github.com/LYiHub/psydraw.git
 cd PsyDraw
 ```
 
-2. Install dependencies:
+2. 安装依赖：
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Set up environment variables:
-- Copy `.env_example` file and rename to `.env`
-- Fill in your API key and base URL
+3. 设置环境变量：
+- 复制 `.env_example` 文件并重命名为 `.env`
+- 填写您的API密钥和基础URL
 
-### Usage Methods
+### 使用方法
 
 <p align="center">
-  <img src="https://img.shields.io/badge/1-Direct%20Invocation-orange?style=for-the-badge" alt="Direct">
-  <img src="https://img.shields.io/badge/2-API%20Integration-orange?style=for-the-badge" alt="API">
-  <img src="https://img.shields.io/badge/3-Web%20Demo-orange?style=for-the-badge" alt="Web">
-  <img src="https://img.shields.io/badge/4-Package%20App-orange?style=for-the-badge" alt="Package">
+  <img src="https://img.shields.io/badge/1-直接调用-orange?style=for-the-badge" alt="直接调用">
+  <img src="https://img.shields.io/badge/2-API集成-orange?style=for-the-badge" alt="API">
+  <img src="https://img.shields.io/badge/3-网页演示-orange?style=for-the-badge" alt="网页">
+  <img src="https://img.shields.io/badge/4-打包应用-orange?style=for-the-badge" alt="打包">
 </p>
 
-#### 1. Direct Invocation
+#### 1. 直接调用
 ```bash
 bash run.sh
-# or
-python run.py --image_file example/example1.png --save_path example/example1_result.json --language en
+# 或
+python run.py --image_file example/example1.png --save_path example/example1_result.json --language zh
 ```
 
-#### 2. API Integration
+#### 2. API集成
 ```bash
 python deploy.py --port 9557
 ```
-Service runs on `http://127.0.0.1:9557`
+服务运行于 `http://127.0.0.1:9557`
 
-#### 3. Web Demo
+#### 3. 网页演示
 ```bash
 bash web_demo.sh
-# or
+# 或
 streamlit run src/main.py
 ```
 
-#### 4. Package Application
+#### 4. 打包应用
 ```bash
 pyinstaller htp_analyzer.spec
 ```
 
-## 📊 Case Studies
+## 📊 案例研究
 <p align="center">
   <img src="assets/case_study1.png" width="45%" />
   <img src="assets/case_study2.png" width="45%" /> 
 </p>
 
-## ⚖️ License
+## ⚖️ 许可证
 
-This project is licensed under the GPL-3.0 License. See the [LICENSE](LICENSE) file for details.
+本项目采用GPL-3.0许可证。详情请参见[LICENSE](LICENSE)文件。
 
-## ⚠️ Disclaimer
+## ⚠️ 免责声明
 
-PsyDraw is strictly a professional screening aid tool. It must not be used as a standalone diagnostic tool or a substitute for professional medical evaluation. The system is designed to support, not replace, the expertise of qualified mental health professionals. Any implementation or use of this system must be under professional supervision.
+PsyDraw严格作为专业筛查辅助工具。它不得作为独立的诊断工具或替代专业医疗评估。该系统旨在支持而非取代合格心理健康专业人员的专业知识。任何系统的实施或使用都必须在专业监督下进行。 
 
-## 📚 Citation
+## 📚 引用
 
-If you find this work helpful, please cite our paper:
+如果您觉得本工作对您有帮助，请引用我们的论文：
 
 ```bibtex
 @misc{zhang2024psydrawmultiagentmultimodalmental,
@@ -148,3 +145,4 @@ If you find this work helpful, please cite our paper:
       url={https://arxiv.org/abs/2412.14769}, 
 }
 ```
+  </rewritten_file>
